@@ -42,6 +42,8 @@ class ToDoListViewModel: ObservableObject{
     func AddItem(title:String){
         //??-> if items.last = null than give 0, than + 1 everything
         let order = (items.last?.order ?? 0) + 1
+        let newItem = ToDoItem(id: UUID(), title: title, isCompleted: false, order: order)
+        items.append(newItem)
     }
     
     func toggle(item: ToDoItem) {
