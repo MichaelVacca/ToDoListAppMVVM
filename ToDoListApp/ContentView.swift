@@ -34,7 +34,7 @@ struct ToDoItemView: View {
 }
 class ToDoListViewModel: ObservableObject{
     @Published var items: [ToDoItem] = [
-        ToDoItem(id:UUID(), title: "Task 1", isCompleted: true, order: 1),
+        ToDoItem(id:UUID(), title: "Task 1", isCompleted: true, order: 7),
         ToDoItem(id:UUID(), title: "Walk the dog", isCompleted: false, order: 3),
         ToDoItem(id:UUID(), title: "Groceries", isCompleted: true, order: 2),
         ToDoItem(id:UUID(), title: "Run", isCompleted: true, order: 4)]
